@@ -6,10 +6,10 @@ import Testimols from '../../Components/Home/Testimols/Testimols'
 
 function Home() {
   return (
-    <div>
+    <div className='flex flex-col gap-y-10 mx-auto container'>
       <Banner/>
-      <Product/>
       <Categories/>
+      <Product/>
       <Testimols/>
     </div>
   )
