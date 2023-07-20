@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "image":"Assets/customer1.png",
+        "name":"James Pattinson",
+        "quote":"“Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.”",
+        "value":4
+    },
+    {
+        "id":2,
+        "image":"Assets/customer2.png",
+        "name":"Greg Stuart",
+        "quote":"“Vestibulum, cum nam non amet consectetur morbi aenean condimentum eget. Ultricies integer nunc neque accumsan laoreet. Viverra nibh ultrices.”",
+        "value":5
+    },
+    {
+        "id":3,
+        "image":"Assets/customer3.png",
+        "name":"Trevor Mitchell",
+        "quote":"“Ut tristique viverra sed porttitor senectus. A facilisis metus pretium ut habitant lorem. Velit vel bibendum eget aliquet sem nec, id sed. Tincidunt.”",
+        "value":3
+    }
+]

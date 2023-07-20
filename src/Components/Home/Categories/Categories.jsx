@@ -38,7 +38,7 @@ function Categories() {
           </div>{" "}
           <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
             <div><GiLoincloth className="md:text-6xl text-4xl"/></div>
-            <div>Men/Women Clothing</div>
+            <div>Clothing</div>
           </div>
         </div>
       </div>
