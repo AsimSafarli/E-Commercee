@@ -15,9 +15,9 @@ function DetailComponent({ productDetail }) {
     5: <SmileOutlined />,
   };
   return (
-    <div className="flex flex-row mx-auto container gap-x-10 ">
+    <div className="flex md:flex-row flex-col mx-auto container gap-x-10 justify-center items-center ">
       <div className="w-1/2">
-        <img src={productDetail.image} className="w-[500px]  h-[600px]" />
+        <img src={productDetail.image} className="md:w-[500px] w-[280px]  h-[280px]  md:h-[600px]" />
       </div>
       <div className="flex flex-col gap-y-7 w-1/2">
         <div className="text-2xl font-semibold ">{productDetail.title}</div>
