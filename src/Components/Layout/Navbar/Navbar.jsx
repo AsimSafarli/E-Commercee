@@ -1,16 +1,15 @@
 import { Avatar, Badge, Space } from "antd";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BiCartAlt } from "react-icons/bi";
+import { BiCartAlt, BiSearch } from "react-icons/bi";
 import { GrFavorite } from "react-icons/gr";
 
 function Navbar() {
   return (
     <nav className="flex flex-row container mx-auto  justify-between items-center mt-6">
       <div className="text-2xl"><Link to='/'>Shopping</Link></div>
-      <ul className="flex flex-row gap-x-5 text-xl">
+      <ul className="flex flex-row gap-x-5 text-xl items-center">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/categories">Categories</NavLink>
         <Link to="/fav">
           {" "}
           <Space size="middle">
