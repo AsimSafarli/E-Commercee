@@ -1,9 +1,20 @@
 import React from 'react'
 import { BiCartAlt, BiSearch } from "react-icons/bi";
 import { GrFavorite } from "react-icons/gr";
+import { useNavigate } from 'react-router-dom';
 function Products({product}) {
+  const navigate = useNavigate()
+
+  const { id, image, price, title } = product;
+
+  const handleClick = () => {
+    navigate(`/detail/${id}`);
+  };
+
+
   return (
-    <div className=' w-[200px] shadow flex flex-col  h-[400px] p-3 justify-between'>
+    <div className=' w-[200px] shadow flex flex-col  h-[400px] p-3 justify-between'   onClick={handleClick}
+    >
     <div className='flex justify-center items-center'>
        <img src={product.image} className='w-[100px] h-[150px] object-cover '/>
     </div>
