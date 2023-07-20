@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from "../../../Slice/Category/CategorySlice";
 
-function Categories() {
+function Categories({setCategory}) {
   const dispatch = useDispatch();
   const categories = useSelector((state) => state.categories.categories);
 
@@ -18,9 +18,9 @@ function Categories() {
 
   return (
     <div>
-      <div className="flex flex-col text-left gap-y-4">
+      <div className="flex flex-col text-left gap-y-4 w-max">
         {categories.map((category) => (
-          <div key={category}  className="text-xl border  border-solid  p-2 text-center hover:text-red-500 hover:bg-white bg-red-500 text-white border-red-500">{category}</div>
+          <div key={category} onClick={()=>setCategory(category)} className="text-xl border  border-solid  p-2 text-center hover:text-red-500 hover:bg-white bg-red-500 text-white border-red-500">{category}</div>
         ))}
       </div>
     </div>

@@ -1,0 +1,22 @@
+import React from 'react'
+import { BiCartAlt, BiSearch } from "react-icons/bi";
+import { GrFavorite } from "react-icons/gr";
+function Products({product}) {
+  return (
+    <div className=' w-[200px] shadow flex flex-col  h-[400px] p-3 justify-between'>
+    <div className='flex justify-center items-center'>
+       <img src={product.image} className='w-[100px] h-[150px] object-cover '/>
+    </div>
+    <div className='text-center flex flex-col gap-y-2'>
+      <div className='font-bold'>{product.price}M</div>
+     <div className='font-medium text-sm'>{product.title}</div>
+    </div>
+    <div className='flex flex-row justify-between items-center'>
+      <div><GrFavorite className='text-xl'/></div><div className='flex flex-row justify-center items-center bg-red-500 w-32 p-1 rounded hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500'><BiCartAlt className='text-2xl '/></div>
+    </div>
+     
+    </div>
+  )
+}
+
+export default Products

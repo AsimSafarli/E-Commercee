@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Category from './Category'
 import Product from './Product'
 
 function Main() {
+    const [category,setCategory]=useState('')
   return (
     <div className='flex flex-col gap-y-10'>
          <div className="flex flex-col gap-y-8">
@@ -12,9 +13,9 @@ function Main() {
         </div>
         <div className="font-semibold text-4xl">Products</div>
       </div>
-      <div className='flex flex-row justify-between'>
-    <Category/>
-    <Product/>
+      <div className='flex flex-row  '>
+    <Category setCategory={setCategory} />
+    <Product category={category}/>
     </div>
     </div>
   )
