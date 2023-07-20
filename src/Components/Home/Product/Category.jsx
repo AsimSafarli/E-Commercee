@@ -18,7 +18,7 @@ function Categories({setCategory}) {
 
   return (
     <div>
-      <div className="flex flex-col text-left gap-y-4 w-max">
+      <div className="flex md:flex-col flex-row flex-wrap gap-x-3 md:text-left gap-y-4 md:w-max pl-[5px]   ">
         {categories.map((category) => (
           <div key={category} onClick={()=>setCategory(category)} className="text-xl border  border-solid  p-2 text-center hover:text-red-500 hover:bg-white bg-red-500 text-white border-red-500">{category}</div>
         ))}

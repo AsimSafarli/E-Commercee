@@ -13,7 +13,7 @@ function Main() {
         </div>
         <div className="font-semibold text-4xl">Products</div>
       </div>
-      <div className='flex flex-row  '>
+      <div className='flex md:flex-row flex-col '>
     <Category setCategory={setCategory} />
     <Product category={category}/>
     </div>

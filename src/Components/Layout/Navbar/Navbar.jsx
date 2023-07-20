@@ -6,7 +6,7 @@ import { GrFavorite } from "react-icons/gr";
 
 function Navbar() {
   return (
-    <nav className="flex flex-row container mx-auto  justify-between items-center mt-6">
+    <nav className="flex flex-row container mx-auto justify-around md:justify-between items-center mt-6">
       <div className="text-2xl"><Link to='/'>Shopping</Link></div>
       <ul className="flex flex-row gap-x-5 text-xl items-center">
         <NavLink to="/">Home</NavLink>

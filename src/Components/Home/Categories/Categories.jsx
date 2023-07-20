@@ -12,32 +12,32 @@ function Categories() {
           <div className="h-10 w-5 bg-red-500 rounded"></div>
           <div className="text-base font-semibold text-red-500">Categories</div>
         </div>
-        <div className="font-semibold text-4xl">Browse By Category</div>
+        <div className="font-semibold text-4xl md:text-left text-center">Browse By Category</div>
       </div>
       <div>
-        <div className="flex flex-row justify-between ">
-          <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
+        <div className="flex md:flex-row flex-wrap gap-y-5 gap-x-5 flex-col md:justify-between justify-center items-center ">
+          <div className="w-max text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
             <div>
-              <BsPhone className="text-6xl" />
+              <BsPhone className="md:text-6xl text-4xl" />
             </div>
             <div>Phones</div>
           </div>
           <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
             <div>
-              <LiaLaptopSolid className="text-6xl" />
+              <LiaLaptopSolid className="md:text-6xl text-4xl" />
             </div>
             <div>Laptops</div>
           </div>{" "}
           <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
-            <div><GiConverseShoe className="text-6xl" /></div>
+            <div><GiConverseShoe className="md:text-6xl text-4xl" /></div>
             <div>Shoes</div>
           </div>{" "}
           <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
-            <div><GiJewelCrown className="text-6xl"/></div>
+            <div><GiJewelCrown className="md:text-6xl text-4xl"/></div>
             <div>Jewelery</div>
           </div>{" "}
           <div className="text-center justify-center items-center flex flex-col gap-y-5 border border-solid border-black border-opacity-30 p-10 rounded-md hover:text-white hover:bg-red-500 bg-white text-red-500">
-            <div><GiLoincloth className="text-6xl"/></div>
+            <div><GiLoincloth className="md:text-6xl text-4xl"/></div>
             <div>Men/Women Clothing</div>
           </div>
         </div>
