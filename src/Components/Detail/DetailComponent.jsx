@@ -30,7 +30,7 @@ function DetailComponent({ productDetail }) {
         </div>
         <div className="text-2xl gap-x-7 flex flex-row">
           <div>Sold :</div>
-         120Z
+         120
         </div>
         <div className="text-center">{productDetail.description}</div>
         <div>

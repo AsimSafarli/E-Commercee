@@ -3,7 +3,7 @@ import { BsGithub, BsInstagram } from 'react-icons/bs'
 function Footer() {
   return (
     <div className=' mx-auto container p-10 mb-10 flex flex-row justify-between'>
-    <div className='text-2xl font-bold'>
+    <div className='md:text-2xl text-lg font-bold'>
     Develop  by Asim Seferli
     </div>
     <div className='text-2xl flex flex-row gap-x-5'>
