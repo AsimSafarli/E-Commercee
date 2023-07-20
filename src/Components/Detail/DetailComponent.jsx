@@ -22,7 +22,7 @@ function DetailComponent({ productDetail }) {
       <div className="flex flex-col gap-y-7 w-1/2">
         <div className="text-2xl font-semibold ">{productDetail.title}</div>
         <div className="flex flex-row gap-x-7 items-center text-2xl">
-        {productDetail.rating.rate}
+       5
           <Rate
             defaultValue={4}
             character={({ index }) => customIcons[index + 1]}
@@ -30,7 +30,7 @@ function DetailComponent({ productDetail }) {
         </div>
         <div className="text-2xl gap-x-7 flex flex-row">
           <div>Sold :</div>
-          {productDetail.rating.count}
+         120Z
         </div>
         <div className="text-center">{productDetail.description}</div>
         <div>
