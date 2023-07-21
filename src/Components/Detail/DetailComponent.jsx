@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FrownOutlined, MehOutlined, SmileOutlined } from "@ant-design/icons";
 import { Rate } from "antd";
 import {TbTruckDelivery} from 'react-icons/tb'
 import { BiCartAlt, BiSearch } from "react-icons/bi";
 import { GrFavorite } from "react-icons/gr";
 import { PiCirclesFourFill } from "react-icons/pi";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../Slice/Cart/CartSlice";
 
 function DetailComponent({ productDetail }) {
+    const [count,setCount] = useState(0)
+const dispatch = useDispatch()
+
+   const  descrease =()=>{
+    if(count > 0) setCount(count -1)
+   }
+   const  increase =()=>{
+    if(count < 120) setCount(count + 1)
+   }
+    
+   const addBaket =()=>{
+    dispatch(addToCart({id:productDetail?.id,title:productDetail?.title, image:productDetail?.image,price:productDetail?.price}))
+   } 
+  
   const customIcons = {
     1: <FrownOutlined />,
     2: <FrownOutlined />,
@@ -29,16 +45,23 @@ function DetailComponent({ productDetail }) {
           />
         </div>
         <div className="text-2xl gap-x-7 flex flex-row">
-          <div>Sold :</div>
+          <div>Count :</div>
          120
         </div>
         <div className="text-center">{productDetail.description}</div>
+       
         <div>
           <div className="flex flex-row justify-start items-center gap-x-10">
+          
             <div className="p-1 border border-solid border-gray-300 rounded text-gray-200">
               <GrFavorite className="text-2xl " />
             </div>
-            <div className="flex flex-row justify-center items-center bg-red-500 w-screen p-1 rounded hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500">
+            <div className="flex flex-row items-center justify-center gap-x-10 ">
+          <button onClick={increase}  className="text-2xl text-red bg-red-500 p-1  hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500 ">+</button>
+          <div className="text-3xl">{count}</div>
+          <button onClick={descrease} className="text-2xl text-red bg-red-500 p-1  hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500">-</button>
+        </div>
+            <div onClick={addBaket} className="flex flex-row justify-center items-center bg-red-500 w-screen p-1 rounded hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500">
               <BiCartAlt className="text-2xl " />
             </div>
           </div>
