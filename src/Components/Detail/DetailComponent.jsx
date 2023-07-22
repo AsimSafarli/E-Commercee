@@ -3,7 +3,6 @@ import { FrownOutlined, MehOutlined, SmileOutlined } from "@ant-design/icons";
 import { Rate } from "antd";
 import {TbTruckDelivery} from 'react-icons/tb'
 import { BiCartAlt, BiSearch } from "react-icons/bi";
-import { GrFavorite } from "react-icons/gr";
 import { PiCirclesFourFill } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../Slice/Cart/CartSlice";
@@ -53,9 +52,7 @@ const dispatch = useDispatch()
         <div>
           <div className="flex flex-row justify-start items-center gap-x-10">
           
-            <div className="p-1 border border-solid border-gray-300 rounded text-gray-200">
-              <GrFavorite className="text-2xl " />
-            </div>
+            
             <div className="flex flex-row items-center justify-center gap-x-10 ">
           <button onClick={increase}  className="text-2xl text-red bg-red-500 p-1  hover:text-red-500 hover:bg-white  text-white hover:border hover:border-solid hover:border-red-500 ">+</button>
           <div className="text-3xl">{count}</div>

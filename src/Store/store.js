@@ -7,6 +7,6 @@ export const store = configureStore({
   reducer: {
     categories : CategorySlice,
     products:ProdutcSlice,
-    cart:CartSlice
+    cart:CartSlice,
   }
 })

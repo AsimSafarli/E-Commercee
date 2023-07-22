@@ -20,18 +20,11 @@ function Navbar() {
       </div>
       <ul className="flex flex-row gap-x-5 text-xl items-center">
         <NavLink to="/">Home</NavLink>
-        <Link to="/fav">
-          {" "}
-          <Space size="middle">
-            <Badge count={0} size="small">
-              <GrFavorite className="text-2xl" />
-            </Badge>
-          </Space>
-        </Link>
+        
         <Link to="/cart">
           <Space size="middle">
             <Badge count={count} size="small">
-              <BiCartAlt className="text-2xl" />
+              <BiCartAlt className="text-3xl" />
             </Badge>
           </Space>
         </Link>

@@ -49,11 +49,11 @@ const cartSlice =createSlice({
           },
       
       
-        removeFromCart:(state,action)=>{
-            const tempCart = state.carts.filter(item=> item.id !== action.payload.id)
-            state.carts=tempCart
-            storeLocalStorage(state.carts)
-        },
+       removeFromCart: (state, action) => {
+  const itemIdToRemove = action.payload; 
+  state.carts = state.carts.filter(item => item.id !== itemIdToRemove.id);
+  storeLocalStorage(state.carts);
+},
         cleareCart:(state)=>{
             state.carts=[]
             storeLocalStorage(state.carts)
