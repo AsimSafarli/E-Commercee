@@ -7,7 +7,7 @@ function Cart({ cart }) {
   const carts = useSelector(state => state.cart.carts);
 
   return (
-    <div className="flex flex-col gap-y-10 w-max ">
+    <div className="flex flex-col gap-y-10 md:w-max w-10/12">
       {cart.map(item => (
         <div key={item.id} className="shadow p-3 flex flex-col md:flex-row items-center justify-between gap-x-10">
           <div><img src={item.image} className="w-32 object-fill" /></div>
